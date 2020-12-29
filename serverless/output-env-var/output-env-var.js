@@ -5,7 +5,7 @@ exports.handler = async _ => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      secret: contextualEnv('API_KEY'),
+      secret: process.env.API_KEY,
     }) 
   }
 }
